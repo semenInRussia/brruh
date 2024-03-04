@@ -1,0 +1,23 @@
+.config/Code/User/History/
+.config/Code/User/workspaceStorage/
+.config/Code/Cache/
+.config/Code/CachedData/
+.config/Code/CachedExtensionVSIXs/
+.config/Code/CachedProfilesData/
+.config/Code/Code Cache/
+.config/Code/Cookies
+.config/Code/Cookies-journal
+.config/Code/Crashpad/
+.config/Code/DawnCache/
+.config/Code/Dictionaries/
+.config/Code/GPUCache/
+.config/Code/Local Storage/
+/.config/Code/Network Persistent State
+/.config/Code/Service Worker/
+/.config/Code/Session Storage/
+/.config/Code/TransportSecurity
+/.config/Code/WebStorage/
+/.config/Code/code.lock
+/.config/Code/databases/
+/.config/Code/logs/
+/.config/Code/machineid

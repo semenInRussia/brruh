@@ -1,0 +1,45 @@
+[
+    /// windows navigation
+    {
+        "key": "Alt-o",
+        "command": "workbench.action.navigateEditorGroups",
+        "when": "!terminalFocus",
+    },
+
+    // navigations between symbols
+    {
+        "key": "Alt-g i",
+        "command": "workbench.action.showAllSymbols",
+    },
+
+    // go to the URL at point
+    {
+        "key": "ctrl+alt+.",
+        "command": "editor.action.openLink"
+    },
+
+    // Duplicate the current line
+    {
+        "key": "ctrl+x ctrl+y",
+        "command": "editor.action.duplicateSelection"
+    },
+
+    // Find defintion (Alt-. and Alt-,)
+    {
+        "key": "alt+.",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "alt+,",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+x p",
+        "command": "workbench.action.focusSideBar"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+]
