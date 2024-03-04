@@ -1,0 +1,15 @@
+import = ["~/.config/alacritty/snazzy.toml"]
+
+[window]
+padding = { x = 30, y = 30 }
+
+[font]
+size = 18
+
+[font.normal]
+family = "JetBrainsMonoNerdFont"
+style = "Regular"
+
+[env]
+term = "xterm-256color"
+
