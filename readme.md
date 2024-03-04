@@ -18,12 +18,11 @@ and other things in the majority Linux things like [bat](https://github.com/shar
 
 ## Install
 
-
 If you already install all things that I configure installation is easily:
 
-1. Install `stow` using anything like `pacman -S stow`
+1. Install [GNU Stow](https://www.gnu.org/software/stow/ "site is a shit, tool is ok") using anything like `pacman -S stow`
 1. Cloning this repo `git clone https://github.com/semenInRussia/brruh.git`
-2. Sync this config using `stow .` (so stow installation is also needed before)
+2. Sync this config using `cd brruh & stow .` (so stow installation is also needed before)
 
 Note: that stow can you say anything like "I found conflicts", it's ok and tells that stow can't automatically erase your configuration files (because it isn't safe) YOU MUST ERASE YOUR CONFIG FILES BEFORE, I suggest you to save your config to other directory, in it you also can `stow` btw
 
