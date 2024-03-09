@@ -7,7 +7,11 @@ You can find here my config of my shell ([fish](https://fishshell.com/)) + termi
 
 ![my shell screen](./doc/shell.png)
 
-my config for editors which I rarely use:
+The main part is configuration of window manager I use [bspwm](https://github.com/baskerville/bspwm "a tiling manager for nubs") with [polybar](https://github.com/polybar/polybar "a status bar (a thing at the top of screen)")
+
+![my system screen](./doc/demo.png)
+
+my configuration for editors which I rarely use:
 
 - [Code](https://devrant.com/rants/5333874/my-biggest-problem-with-visual-studio-code-is-that-every-fucking-piece-of-shit-d)
 - [Helix](https://helix-editor.com/)
@@ -26,7 +30,7 @@ If you already install all things that I configure installation is easily:
 
 Note: that stow can you say anything like "I found conflicts", it's ok and tells that stow can't automatically erase your configuration files (because it isn't safe) YOU MUST ERASE YOUR CONFIG FILES BEFORE, I suggest you to save your config to other directory, in it you also can `stow` btw
 
-Also note: that you can use only part of my config files for it just don't install extra packages (for example you don't use helix, to don't use my config files of Helix just don't install Helix) or if you need to use your Helix config just remove the Helix directory from my dotfiles it's ok
+Also note: that you can use only part of my config files for it just don't install extra packages (for example you don't use `bspwm` --- don't install Helix) or if you need to use your bspwm not mine config remove the Helix directory from my dotfiles it's ok
 
 ## Uninstall
 
