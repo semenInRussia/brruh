@@ -21,3 +21,5 @@
 /.config/Code/databases/
 /.config/Code/logs/
 /.config/Code/machineid
+/.config/examples/
+/.config/btop/btop.log
