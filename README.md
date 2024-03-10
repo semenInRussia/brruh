@@ -9,7 +9,7 @@ You can find here my config of my shell ([fish](https://fishshell.com/)) + termi
 
 The main part is configuration of window manager I use [bspwm](https://github.com/baskerville/bspwm "a tiling manager for nubs") with [polybar](https://github.com/polybar/polybar "a status bar (a thing at the top of screen)")
 
-![my system screen](./doc/demo.png)
+![I'm updating system](./doc/update-demo.png)
 
 my configuration for editors which I rarely use:
 
