@@ -25,7 +25,7 @@ bspc config gapless_monocle      true
 
 bspc rule -a Chromium        desktop='^1'
 bspc rule -a firefox         desktop='^1'
-bspc rule -a Emacs           desktop='^3' state="tiled"
+bspc rule -a Emacs           state="tiled"
 bspc rule -a TelegramDesktop desktop='^4' state="tiled"
 
 polybar &

@@ -1,4 +1,4 @@
-alias em=emacsclient
+alias em="emacsclient -r"
 fish_add_path ~/.local/bin/
 
 if status is-interactive
