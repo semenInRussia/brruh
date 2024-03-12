@@ -6,6 +6,10 @@
 super + Return
 	alacritty
 
+# terminal file manager with Vim-like keybindings
+super + e
+  alacritty -e nnn
+
 # program launcher
 super + @space
 	dmenu_run
