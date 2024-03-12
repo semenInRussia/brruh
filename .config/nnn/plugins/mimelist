@@ -2,12 +2,8 @@
 
 # Description: Find and list files by mime type in smart context
 #
-# Dependencies:
-#   - file
-#   - mimetype (optional, PERL File MimeInfo)
-#
 # Shell: POSIX compliant
-# Author: Arun Prakash Jana, Michel DHOOGE
+# Author: Arun Prakash Jana
 
 # shellcheck disable=SC1090,SC1091
 . "$(dirname "$0")"/.nnn-plugin-helper
@@ -16,8 +12,4 @@ printf "mime (e.g., video/audio/image): "
 read -r mime
 
 printf "%s" "+l" > "$NNN_PIPE"
-if type mimetype >/dev/null 2>&1; then
-    find . | mimetype -f - | grep "$mime" | awk -F: '{printf "%s%c", $1, 0}' > "$NNN_PIPE"
-else
-    find . | file -if- | grep "$mime" | awk -F: '{printf "%s%c", $1, 0}' > "$NNN_PIPE"
-fi
+find . | file -if- | grep "$mime" | awk -F: '{printf "%s\0", $1}' > "$NNN_PIPE"

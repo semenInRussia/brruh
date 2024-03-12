@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+
+# Description: Send selected or hovered file(s) to the telegram
+#
+# Dependencies: telegram-send
+#
+# Shell: POSIX compilant
+# Author: semenInRussia
+
+notify=1
+selection=${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection}
+
+tgsend() {
+    printf "Send '$1'... "
+    telegram-send --file "$1"
+    printf "done 󰱒\n"
+}
+
+export -f tgsend
+
+if [ -s "$selection" ] && printf "'c'urrent/'s'el?\n" && read entry_type && [ $entry_type = s ]; then
+    xargs -0 -I % sh -c 'tgsend %' < "$selection"
+    printf "-" > "$NNN_PIPE"
+elif [ ! -z "$1" ]; then
+    tgsend "$1"
+fi
