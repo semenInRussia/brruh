@@ -1,7 +1,9 @@
 {
     "userDataProfilesMigration": true,
     "profileAssociations": {
-        "workspaces": {},
+        "workspaces": {
+            "file:///home/semeninrussia": "__default__profile__"
+        },
         "emptyWindows": {
             "1710165804440": "2b37f6de"
         }
@@ -11,22 +13,23 @@
     "telemetry.machineId": "d07eeac34772ae20df688fb7afbe7fc37ce899b5c459fc53b25419175bb57c67",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1710165804440"
+                "folderUri": "file:///home/semeninrussia"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/semeninrussia/.config/Code/Backups/1710165804440",
+            "folder": "file:///home/semeninrussia",
+            "backupPath": "/home/semeninrussia/.config/Code/Backups/b8712c3dc5ac53a3e978969989f927c9",
             "uiState": {
                 "mode": 1,
-                "x": 130,
-                "y": 39,
-                "width": 1340,
-                "height": 848
+                "x": 808,
+                "y": 42,
+                "width": 716,
+                "height": 842
             }
         },
         "openedWindows": []
