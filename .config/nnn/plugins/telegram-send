@@ -19,7 +19,7 @@ tgsend() {
 export -f tgsend
 
 if [ -s "$selection" ] && printf "'c'urrent/'s'el?\n" && read entry_type && [ $entry_type = s ]; then
-    xargs -0 -I % sh -c 'tgsend %' < "$selection"
+    xargs -0 -I % sh -c 'tgsend "%"' < "$selection"
     printf "-" > "$NNN_PIPE"
 elif [ ! -z "$1" ]; then
     tgsend "$1"
