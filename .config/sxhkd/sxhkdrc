@@ -12,7 +12,7 @@ super + e
 
 # program launcher
 super + @space
-	dmenu_run -fn "JetBrainsMonoNerdFont" -l 5 -nf "#d4d4d4" -nb "#252526" -sf "#121212" -sb "#FC9354"
+  dmenu_run -fn "JetBrainsMonoNerdFont:pixelsize=18" -l 5 -nf "#FFFFFF" -nb "#252526" -sf "#111111" -sb "#FC9354"
 
 # make sxhkd reload its configuration files:
 super + Escape
