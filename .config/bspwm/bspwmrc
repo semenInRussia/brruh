@@ -28,5 +28,10 @@ bspc rule -a firefox         desktop='^1'
 bspc rule -a Emacs           state="tiled"
 bspc rule -a TelegramDesktop desktop='^4' state="tiled"
 
+# 400ms - time before pressing one character enable repetition
+# 45 - amount of presses will be processed per second while repetition
+#   is enabled
+xset r rate 400 45
+
 polybar &
 feh --bg-scale ~/.config/wallpapers/ph.jpg
