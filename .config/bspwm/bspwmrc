@@ -31,7 +31,7 @@ bspc rule -a TelegramDesktop desktop='^4' state="tiled"
 # 400ms - time before pressing one character enable repetition
 # 45 - amount of presses will be processed per second while repetition
 #   is enabled
-xset r rate 400 45
+xset r rate 400 33
 
 polybar &
 feh --bg-scale ~/.config/wallpapers/ph.jpg
